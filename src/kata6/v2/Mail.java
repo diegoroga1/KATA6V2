@@ -1,0 +1,23 @@
+
+package kata6.v2;
+
+import kata6.*;
+
+
+
+public class Mail {
+    private final String mail;
+
+    public String getMail() {
+        return mail;
+    }
+
+    public Mail(String mail) {
+        this.mail = mail;
+    }
+    
+    public String getDominio(){
+        return mail.split("@")[1];
+    }
+
+}
